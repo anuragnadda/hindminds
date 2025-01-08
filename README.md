@@ -37,7 +37,7 @@ If you're looking for professional IT services to grow your business, we’re he
 Reach out to us for an initial consultation:
 
 - **Email**: contact@hindminds.com
-- **Phone**: +1-800-123-4567
+- **Phone**: +91-1724736511
 - **Website**: [www.hindminds.com](http://www.hindminds.com)
 
 ### 2. Share Your Requirements
@@ -62,21 +62,9 @@ We work with a broad spectrum of technologies to deliver high-quality solutions:
 - **Databases**: MySQL, PostgreSQL, MongoDB, Firebase
 - **DevOps Tools**: Docker, Kubernetes, Jenkins, Git
 
-## Testimonials
-
-> "Hindminds transformed our IT infrastructure and helped us scale our business operations seamlessly. Their expert team delivered on time and within budget!"  
-– **John Doe, CEO of ABC Corp.**
-
-> "We partnered with Hindminds for our mobile app development, and their work exceeded our expectations. Highly recommended for businesses looking for reliable IT services!"  
-– **Jane Smith, CTO of XYZ Ltd.**
-
 ## Contributing
 
 We welcome collaboration and contribution to the Hindminds ecosystem. If you are a developer or an IT professional and would like to collaborate with us, feel free to reach out to us.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
