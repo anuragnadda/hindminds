@@ -1,0 +1,9 @@
+Error sending email: (550, b'Request failed; Mailbox unavailable', 'anu112233@yopmail.com')
+Error sending email: (550, b'Request failed; Mailbox unavailable', 'anu112233@yopmail.com')
+Error sending email: (550, b'Request failed; Mailbox unavailable', 'anuragnadda@gmail.com')
+Error sending email: (550, b'Request failed; Mailbox unavailable', 'anu112233@yopmail.com')
+Email sent successfully to hindminds81@gmail.com from anuragnadda@gmail.com
+Email sent successfully to hindminds81@gmail.com from anuragnadda@yahoo.com
+Email sent successfully to hindminds81@gmail.com from anuragnadda@yahoo.com
+[2025-01-07 10:41:11] Email sent successfully to hindminds81@gmail.com from anu112233@yopmail.com
+[2025-01-08 06:36:31] Email sent successfully to hindminds81@gmail.com from anu112233@yopmail.com

@@ -1,0 +1,646 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>HindMinds</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="{% static 'img/logo.png' %}" rel="icon">
+  <link href="{% static 'img/logo.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+  <link href="{% static 'css/hind.css' %}" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="#hero" class="logo d-flex align-items-center me-auto">
+        <img src="{% static 'img/logo.png' %}" alt="">
+        <h1 class="sitename">HindMinds</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="{% static 'img/hero-bg-light.webp' %}" alt="">
+      </div>
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h1 data-aos="fade-up">Welcome to <span>HindMinds</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100">Quickly start your project now and set the stage for success<br></p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=zGns5CMSvzU" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+          </div>
+          <img src="{% static 'img/hero-services-img.webp' %}" class="img-fluid hero-img" alt="" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section light-background">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <!-- Mental Health Project -->
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-person-lines-fill"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Virtual & Local Mental Health Care</a></h4>
+                <p class="description">Developed a platform offering tailored mental health care, connecting individuals with the right therapists or psychiatric providers, whether virtual or local.</p>
+              </div>
+            </div>
+          </div><!-- End Project Item -->
+
+          <!-- E-Commerce Project -->
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-basket3-fill"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Customizable E-Commerce Platform</a></h4>
+                <p class="description">Built a scalable e-commerce platform enabling businesses to manage products, orders, and payments with advanced customization options.</p>
+              </div>
+            </div>
+          </div><!-- End Project Item -->
+
+
+          <!-- Health Project 1 -->
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-heart"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Health Monitoring System</a></h4>
+                <p class="description">Developed an innovative health monitoring system that tracks patients' vitals in real time.</p>
+              </div>
+            </div>
+          </div><!-- End Project Item -->
+
+          <!-- Travel & Booking System -->
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="800">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-globe"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Travel & Hotel Booking Platform</a></h4>
+                <p class="description">Created a travel platform that allows users to search, compare, and book hotels and flights with a seamless user experience.</p>
+              </div>
+            </div>
+          </div><!-- End Project Item -->
+
+          <!-- Health Project 2 -->
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-stethoscope"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">AI-Driven Health Diagnostics</a></h4>
+                <p class="description">Built an AI-powered diagnostic tool to assist healthcare providers in accurate patient assessments.</p>
+              </div>
+            </div>
+          </div><!-- End Project Item -->
+
+          <!-- Real Estate Portal -->
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="900">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-house-fill"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Real Estate Listing Portal</a></h4>
+                <p class="description">Developed a real estate portal enabling users to explore properties, schedule viewings, and connect with agents seamlessly.</p>
+              </div>
+            </div>
+          </div><!-- End Project Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p class="who-we-are">Who We Are</p>
+            <h3>Empowering Digital Innovation for All</h3>
+            <p class="fst-italic">
+              We are dedicated to bringing digital solutions that make a difference, shaping a world where technology empowers businesses and individuals alike.
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>Innovative solutions that drive growth and transformation.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Commitment to accessibility and inclusivity in the digital space.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Partnering with you to build a smarter, connected future for everyone.</span></li>
+            </ul>
+            <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <img src="{% static 'img/about-company-1.jpg' %}" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6">
+                <div class="row gy-4">
+                  <div class="col-lg-12">
+                    <img src="{% static 'img/about-company-2.jpg' %}" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="{% static 'img/about-company-3.jpg' %}" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Languages Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/ruby.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/react.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/python.jpeg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/php.webp' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/angular.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/node.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/rails.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/postgres.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/django.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/laravel.png' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/aws.jpg' %}" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="{% static 'img/languages/docker.png' %}" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Languages Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Delivering innovative digital solutions to transform ideas into impactful experiences</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-5">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <i class="bi bi-laptop icon"></i>
+              <div>
+                <h3>Web Development</h3>
+                <p>Crafting responsive, scalable, and user-friendly websites to elevate your digital presence.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <i class="bi bi-phone icon"></i>
+              <div>
+                <h3>Mobile Development</h3>
+                <p>Building seamless, high-performing apps for iOS, Android, and cross-platform needs.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <i class="bi bi-database icon"></i>
+              <div>
+                <h3>AI and Data Solutions</h3>
+                <p>Providing AI and data-driven solutions to unlock insights and power innovation.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-red position-relative">
+              <i class="bi bi-gear icon"></i>
+              <div>
+                <h3>Artificial Intelligence & Machine Learning</h3>
+                <p>Transforming businesses with intelligent AI and Machine Learning solutions for smarter decision-making.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-indigo position-relative">
+              <i class="bi bi-bar-chart icon"></i>
+              <div>
+                <h3>Data Analytics & Business Intelligence</h3>
+                <p>Transforming data into actionable insights with cutting-edge tools and techniques.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item item-pink position-relative">
+              <i class="bi bi-tools icon"></i>
+              <div>
+                <h3>Advanced Development Practices</h3>
+                <p>Elevating solutions with cutting-edge and innovative development practices.</p>
+                <a href="#" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Clients Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Clients</h2>
+        <p>Discover the success stories and heartfelt appreciation from our clients, showcasing the value we bring through every collaboration.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Working with HindMinds has been a game-changer for our business. Their attention to detail and commitment to excellence is unmatched.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'img/clients/clients-1.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Saul Goodman</h3>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  HindMinds transformed our digital presence, and the results speak for themselves. Their team is truly dedicated and innovative!
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'img/clients/clients-2.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Sara Wilsson</h3>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  The team at HindMinds delivered beyond our expectations. Their expertise in technology and strategy has helped us grow our brand and reach new heights.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'img/clients/clients-3.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Jena Karlis</h3>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  HindMinds has been an incredible partner in our digital journey. Their innovative solutions and timely support have made a significant impact on our success.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'img/clients/clients-4.jpg' %}" class="testimonial-img" alt="">
+                  <h3>Matt Brandon</h3>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Thanks to HindMinds, we’ve seen a measurable improvement in our online engagement and business outcomes. Their strategic approach is top-notch!
+                </p>
+                <div class="profile mt-auto">
+                  <img src="{% static 'img/clients/clients-5.jpg' %}" class="testimonial-img" alt="">
+                  <h3>John Larson</h3>
+                </div>
+              </div>
+            </div><!-- End clients item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>We're here to help! Whether you have questions, feedback, or need assistance, our team is ready to support you.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <p>E-195, Second Floor, Phase 8B, Sector 74, Mohali Punjab 160055</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p>+91-1724736511</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>contact@hindminds.com</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <div class="row gy-4 mt-1">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.321080214581!2d76.6859267752777!3d30.70937277459558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fef78efc149e5%3A0xed82686df5956e92!2sHindMinds%20Private%20Limited!5e0!3m2!1sen!2sin!4v1735550167772!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div><!-- End Google Maps -->
+
+          <div class="col-lg-6">
+            <form action="{% url 'homepage' %}" method="post">
+              {% csrf_token %}
+              <div class="row gy-4">
+                  <div class="col-md-6">
+                      <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+          
+                  <div class="col-md-6">
+                      <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+          
+                  <div class="col-md-12">
+                      <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+          
+                  <div class="col-md-12">
+                      <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+          
+                  <div class="col-md-12 text-center">
+                      {% if messages %}
+                          <div class="messages">
+                              {% for message in messages %}
+                                  <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+                              {% endfor %}
+                          </div>
+                      {% endif %}
+                      <button type="submit" class="hindminds-btn-primary">Send Message</button>
+                  </div>
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4 justify-content-evenly">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="#hero" class="logo d-flex align-items-center">
+            <span class="sitename">HindMinds</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>E-195, Second Floor, Phase 8B</p>
+            <p>Sector 74, Mohali Punjab 160055</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+91-1724736511</span></p>
+            <p><strong>Email:</strong> <span>contact@hindminds.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fhindminds"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/HindMinds/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/hindminds/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.linkedin.com/company/hindminds/"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.youtube.com/@hindminds"><i class="bi bi-youtube"></i></a>
+            <a href="https://api.whatsapp.com/message/AVILKJMTAYA7K1?autoload=1&app_absent=0"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div> -->
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">HindMinds</strong><span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed by <a href="#">HindMindsMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Main JS File -->
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
